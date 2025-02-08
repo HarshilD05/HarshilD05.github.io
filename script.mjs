@@ -1,6 +1,9 @@
-
 /* Page Data */
 const TouristDestinations = await fetch('india_tourism.json').then(response => response.json());
+
+/* DOM Elements */
+const mapContainer = document.getElementById('map');
+const TourismSelect = document.getElementById('tourism-type-dropdown');
 
 // Define India's geographical bounds
 const indiaBounds = L.latLngBounds(
@@ -37,8 +40,11 @@ const colors = [
   '#CCFF66'
 ];
 
-// Load the GeoJSON data for India's states
-fetch('india_states.geojson') // Path to your GeoJSON file
+
+/* Functions */
+function renderMap() {
+  // Load the GeoJSON data for India's states
+  fetch('india_states.geojson') // Path to your GeoJSON file
   .then(response => response.json())
   .then(data => {
     // Add the GeoJSON layer to the map
@@ -62,8 +68,8 @@ fetch('india_states.geojson') // Path to your GeoJSON file
     }).addTo(map);
   })
   .catch(error => console.error('Error loading GeoJSON:', error));
+}
 
-/* Functions */
 // Function to display destinations on the map
 function showLocations(locations) {
   // Clear existing layers
@@ -98,12 +104,13 @@ function showLocations(locations) {
   });
 }
 
-/* Eveent Listeners */
-
-// Add event listeners to tourism type options
-document.querySelector('#tourism-type-dropdown').addEventListener('change', event => {
+/* Event Listeners */
+TourismSelect.addEventListener('change',  (event) => {
   const tourismType = event.target.value;
   if (TouristDestinations[tourismType]) {
     showLocations(TouristDestinations[tourismType]);
   }
 });
+
+/* On Page Load */
+renderMap();
