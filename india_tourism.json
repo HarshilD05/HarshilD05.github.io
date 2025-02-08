@@ -1,0 +1,613 @@
+{
+  "historical": [
+    {
+      "name": "Taj Mahal",
+      "state": "Uttar Pradesh",
+      "latitude": 27.1751,
+      "longitude": 78.0421
+    },
+    {
+      "name": "Jaipur (Amber Fort, City Palace, Hawa Mahal)",
+      "state": "Rajasthan",
+      "latitude": 26.9124,
+      "longitude": 75.7873
+    },
+    {
+      "name": "Qutub Minar",
+      "state": "Delhi",
+      "latitude": 28.5245,
+      "longitude": 77.1855
+    },
+    {
+      "name": "Red Fort",
+      "state": "Delhi",
+      "latitude": 28.6562,
+      "longitude": 77.241
+    },
+    {
+      "name": "Fatehpur Sikri",
+      "state": "Uttar Pradesh",
+      "latitude": 27.0937,
+      "longitude": 77.661
+    },
+    {
+      "name": "Hampi",
+      "state": "Karnataka",
+      "latitude": 15.335,
+      "longitude": 76.46
+    },
+    {
+      "name": "Khajuraho Temples",
+      "state": "Madhya Pradesh",
+      "latitude": 24.8524,
+      "longitude": 79.9225
+    },
+    {
+      "name": "Konark Sun Temple",
+      "state": "Odisha",
+      "latitude": 19.8876,
+      "longitude": 86.0945
+    },
+    {
+      "name": "Mysore Palace",
+      "state": "Karnataka",
+      "latitude": 12.3052,
+      "longitude": 76.6551
+    },
+    {
+      "name": "Ajanta Caves",
+      "state": "Maharashtra",
+      "latitude": 20.5522,
+      "longitude": 75.7038
+    },
+    {
+      "name": "Ellora Caves",
+      "state": "Maharashtra",
+      "latitude": 20.0268,
+      "longitude": 75.1782
+    },
+    {
+      "name": "Sanchi Stupa",
+      "state": "Madhya Pradesh",
+      "latitude": 23.4793,
+      "longitude": 77.7399
+    },
+    {
+      "name": "Meenakshi Temple",
+      "state": "Tamil Nadu",
+      "latitude": 9.9195,
+      "longitude": 78.1191
+    },
+    {
+      "name": "Jaisalmer Fort",
+      "state": "Rajasthan",
+      "latitude": 26.9124,
+      "longitude": 70.9128
+    },
+    {
+      "name": "Victoria Memorial",
+      "state": "West Bengal",
+      "latitude": 22.5448,
+      "longitude": 88.3426
+    },
+    {
+      "name": "Gateway of India",
+      "state": "Maharashtra",
+      "latitude": 18.922,
+      "longitude": 72.8347
+    },
+    {
+      "name": "Mahabalipuram (Shore Temple)",
+      "state": "Tamil Nadu",
+      "latitude": 12.617,
+      "longitude": 80.1956
+    },
+    {
+      "name": "Golconda Fort",
+      "state": "Telangana",
+      "latitude": 17.3833,
+      "longitude": 78.4011
+    },
+    {
+      "name": "Rani ki Vav",
+      "state": "Gujarat",
+      "latitude": 23.8589,
+      "longitude": 72.101
+    },
+    {
+      "name": "Cellular Jail",
+      "state": "Andaman & Nicobar",
+      "latitude": 11.6753,
+      "longitude": 92.7488
+    }
+  ],
+	"religious" : [
+		{
+			"name": "Varanasi (Kashi Vishwanath Temple)",
+			"state": "Uttar Pradesh",
+			"latitude": 25.3176,
+			"longitude": 83.0104
+		},
+		{
+			"name": "Tirupati (Venkateswara Temple)",
+			"state": "Andhra Pradesh",
+			"latitude": 13.6787,
+			"longitude": 79.3498
+		},
+		{
+			"name": "Vaishno Devi Temple",
+			"state": "Jammu & Kashmir",
+			"latitude": 33.0308,
+			"longitude": 74.9490
+		},
+		{
+			"name": "Golden Temple",
+			"state": "Punjab",
+			"latitude": 31.6200,
+			"longitude": 74.8765
+		},
+		{
+			"name": "Jagannath Temple",
+			"state": "Odisha",
+			"latitude": 19.8030,
+			"longitude": 85.8186
+		},
+		{
+			"name": "Kedarnath Temple",
+			"state": "Uttarakhand",
+			"latitude": 30.7352,
+			"longitude": 79.0669
+		},
+		{
+			"name": "Badrinath Temple",
+			"state": "Uttarakhand",
+			"latitude": 30.7433,
+			"longitude": 79.4930
+		},
+		{
+			"name": "Amarnath Cave Temple",
+			"state": "Jammu & Kashmir",
+			"latitude": 34.2130,
+			"longitude": 75.5110
+		},
+		{
+			"name": "Somnath Temple",
+			"state": "Gujarat",
+			"latitude": 20.8880,
+			"longitude": 70.4012
+		},
+		{
+			"name": "Dwarkadhish Temple",
+			"state": "Gujarat",
+			"latitude": 22.2394,
+			"longitude": 68.9671
+		},
+		{
+			"name": "Rameswaram (Ramanathaswamy Temple)",
+			"state": "Tamil Nadu",
+			"latitude": 9.2881,
+			"longitude": 79.3174
+		},
+		{
+			"name": "Meenakshi Temple",
+			"state": "Tamil Nadu",
+			"latitude": 9.9195,
+			"longitude": 78.1191
+		},
+		{
+			"name": "Akshardham Temple",
+			"state": "Delhi",
+			"latitude": 28.6127,
+			"longitude": 77.2773
+		},
+		{
+			"name": "Shirdi Sai Baba Temple",
+			"state": "Maharashtra",
+			"latitude": 19.7645,
+			"longitude": 74.4773
+		},
+		{
+			"name": "Mahabodhi Temple",
+			"state": "Bihar",
+			"latitude": 24.6951,
+			"longitude": 84.9914
+		},
+		{
+			"name": "Sabarimala Temple",
+			"state": "Kerala",
+			"latitude": 9.4231,
+			"longitude": 77.0745
+		},
+		{
+			"name": "Ranakpur Jain Temple",
+			"state": "Rajasthan",
+			"latitude": 25.1219,
+			"longitude": 73.4465
+		},
+		{
+			"name": "Kanchipuram Temples",
+			"state": "Tamil Nadu",
+			"latitude": 12.8477,
+			"longitude": 79.7050
+		},
+		{
+			"name": "Kamakhya Temple",
+			"state": "Assam",
+			"latitude": 26.1662,
+			"longitude": 91.7052
+		},
+		{
+			"name": "Hemkund Sahib",
+			"state": "Uttarakhand",
+			"latitude": 30.7191,
+			"longitude": 79.7221
+		}
+	],
+	"adventure" : [
+		{
+			"name": "Rishikesh (River Rafting, Bungee Jumping)",
+			"state": "Uttarakhand",
+			"latitude": 30.0864,
+			"longitude": 78.2676
+		},
+		{
+			"name": "Manali (Paragliding, Trekking, Skiing)",
+			"state": "Himachal Pradesh",
+			"latitude": 32.2396,
+			"longitude": 77.1887
+		},
+		{
+			"name": "Leh-Ladakh (Motorbiking, Trekking, Camping)",
+			"state": "Ladakh",
+			"latitude": 34.1526,
+			"longitude": 77.5770
+		},
+		{
+			"name": "Spiti Valley (Off-Roading, Mountain Biking)",
+			"state": "Himachal Pradesh",
+			"latitude": 32.2460,
+			"longitude": 78.0170
+		},
+		{
+			"name": "Auli (Skiing, Snowboarding)",
+			"state": "Uttarakhand",
+			"latitude": 30.5283,
+			"longitude": 79.5644
+		},
+		{
+			"name": "Andaman & Nicobar Islands (Scuba Diving, Snorkeling)",
+			"state": "Andaman & Nicobar",
+			"latitude": 11.7401,
+			"longitude": 92.6586
+		},
+		{
+			"name": "Goa (Water Sports, Scuba Diving, Parasailing)",
+			"state": "Goa",
+			"latitude": 15.2993,
+			"longitude": 74.1240
+		},
+		{
+			"name": "Bir Billing (Paragliding)",
+			"state": "Himachal Pradesh",
+			"latitude": 32.0456,
+			"longitude": 76.7007
+		},
+		{
+			"name": "Jim Corbett National Park (Wildlife Safari)",
+			"state": "Uttarakhand",
+			"latitude": 29.5300,
+			"longitude": 78.7740
+		},
+		{
+			"name": "Roopkund Trek (Mysterious Lake Trek)",
+			"state": "Uttarakhand",
+			"latitude": 30.2653,
+			"longitude": 79.7316
+		},
+		{
+			"name": "Chadar Trek (Frozen River Trek)",
+			"state": "Ladakh",
+			"latitude": 34.1642,
+			"longitude": 77.5048
+		},
+		{
+			"name": "Sand Dunes, Jaisalmer (Desert Safari, Dune Bashing)",
+			"state": "Rajasthan",
+			"latitude": 26.9117,
+			"longitude": 70.9128
+		},
+		{
+			"name": "Mechuka (Mountain Trekking, River Rafting)",
+			"state": "Arunachal Pradesh",
+			"latitude": 28.6006,
+			"longitude": 94.1396
+		},
+		{
+			"name": "Tawang (High Altitude Trekking, Camping)",
+			"state": "Arunachal Pradesh",
+			"latitude": 27.5860,
+			"longitude": 91.8655
+		},
+		{
+			"name": "Kanha National Park (Wildlife Safari, Photography)",
+			"state": "Madhya Pradesh",
+			"latitude": 22.3345,
+			"longitude": 80.6115
+		},
+		{
+			"name": "Dudhsagar Falls (Trekking, Waterfall Rappelling)",
+			"state": "Goa",
+			"latitude": 15.3140,
+			"longitude": 74.3146
+		},
+		{
+			"name": "Munnar (Trekking, Rock Climbing)",
+			"state": "Kerala",
+			"latitude": 10.0892,
+			"longitude": 77.0595
+		},
+		{
+			"name": "Kovalam (Surfing, Jet Skiing)",
+			"state": "Kerala",
+			"latitude": 8.4002,
+			"longitude": 76.9786
+		},
+		{
+			"name": "Dzukou Valley (Trekking, Camping)",
+			"state": "Nagaland",
+			"latitude": 25.6127,
+			"longitude": 94.0573
+		},
+		{
+			"name": "Rann of Kutch (Desert Camping, Off-Roading)",
+			"state": "Gujarat",
+			"latitude": 23.7337,
+			"longitude": 70.4931
+		}
+	],
+	"cultural" : [
+    {
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "latitude": 26.9124,
+      "longitude": 75.7873
+    },
+    {
+      "name": "Varanasi",
+      "state": "Uttar Pradesh",
+      "latitude": 25.3176,
+      "longitude": 82.9739
+    },
+    {
+      "name": "Kolkata",
+      "state": "West Bengal",
+      "latitude": 22.5726,
+      "longitude": 88.3639
+    },
+    {
+      "name": "Mysore",
+      "state": "Karnataka",
+      "latitude": 12.2958,
+      "longitude": 76.6394
+    },
+    {
+      "name": "Udaipur",
+      "state": "Rajasthan",
+      "latitude": 24.5854,
+      "longitude": 73.7125
+    },
+    {
+      "name": "Delhi",
+      "state": "Delhi",
+      "latitude": 28.6139,
+      "longitude": 77.2090
+    },
+    {
+      "name": "Amritsar",
+      "state": "Punjab",
+      "latitude": 31.6340,
+      "longitude": 74.8723
+    },
+    {
+      "name": "Khajuraho",
+      "state": "Madhya Pradesh",
+      "latitude": 24.8516,
+      "longitude": 79.9219
+    },
+    {
+      "name": "Madurai",
+      "state": "Tamil Nadu",
+      "latitude": 9.9252,
+      "longitude": 78.1198
+    },
+    {
+      "name": "Thanjavur",
+      "state": "Tamil Nadu",
+      "latitude": 10.7867,
+      "longitude": 79.1378
+    },
+    {
+      "name": "Jodhpur",
+      "state": "Rajasthan",
+      "latitude": 26.2389,
+      "longitude": 73.0243
+    },
+    {
+      "name": "Lucknow",
+      "state": "Uttar Pradesh",
+      "latitude": 26.8467,
+      "longitude": 80.9462
+    },
+    {
+      "name": "Hampi",
+      "state": "Karnataka",
+      "latitude": 15.3350,
+      "longitude": 76.4600
+    },
+    {
+      "name": "Pondicherry",
+      "state": "Puducherry",
+      "latitude": 11.9416,
+      "longitude": 79.8083
+    },
+    {
+      "name": "Ahmedabad",
+      "state": "Gujarat",
+      "latitude": 23.0225,
+      "longitude": 72.5714
+    },
+    {
+      "name": "Bhopal",
+      "state": "Madhya Pradesh",
+      "latitude": 23.2599,
+      "longitude": 77.4126
+    },
+    {
+      "name": "Kochi",
+      "state": "Kerala",
+      "latitude": 9.9312,
+      "longitude": 76.2673
+    },
+    {
+      "name": "Ajanta Caves",
+      "state": "Maharashtra",
+      "latitude": 20.5519,
+      "longitude": 75.7033
+    },
+    {
+      "name": "Mahabalipuram",
+      "state": "Tamil Nadu",
+      "latitude": 12.6208,
+      "longitude": 80.1945
+    },
+    {
+      "name": "Chandni Chowk",
+      "state": "Delhi",
+      "latitude": 28.6562,
+      "longitude": 77.2300
+    }
+  ],
+	"culinary" : [
+    {
+      "name": "Delhi (Chandni Chowk - Street Food)",
+      "state": "Delhi",
+      "latitude": 28.6562,
+      "longitude": 77.2300
+    },
+    {
+      "name": "Lucknow (Awadhi Cuisine - Kebabs & Biryani)",
+      "state": "Uttar Pradesh",
+      "latitude": 26.8467,
+      "longitude": 80.9462
+    },
+    {
+      "name": "Hyderabad (Hyderabadi Biryani)",
+      "state": "Telangana",
+      "latitude": 17.3850,
+      "longitude": 78.4867
+    },
+    {
+      "name": "Kolkata (Rasgulla, Mishti Doi, Kathi Rolls)",
+      "state": "West Bengal",
+      "latitude": 22.5726,
+      "longitude": 88.3639
+    },
+    {
+      "name": "Amritsar (Punjabi Cuisine - Kulcha, Lassi, Langar)",
+      "state": "Punjab",
+      "latitude": 31.6340,
+      "longitude": 74.8723
+    },
+    {
+      "name": "Mumbai (Vada Pav, Pav Bhaji, Seafood)",
+      "state": "Maharashtra",
+      "latitude": 19.0760,
+      "longitude": 72.8777
+    },
+    {
+      "name": "Jaipur (Rajasthani Thali - Dal Baati Churma, Ghewar)",
+      "state": "Rajasthan",
+      "latitude": 26.9124,
+      "longitude": 75.7873
+    },
+    {
+      "name": "Chennai (Chettinad Cuisine - Dosa, Filter Coffee)",
+      "state": "Tamil Nadu",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    {
+      "name": "Bangalore (Dosa, Idli, Biryani, Craft Beers)",
+      "state": "Karnataka",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    {
+      "name": "Goa (Seafood, Bebinca, Feni)",
+      "state": "Goa",
+      "latitude": 15.2993,
+      "longitude": 74.1240
+    },
+    {
+      "name": "Ahmedabad (Gujrati Thali, Fafda, Jalebi)",
+      "state": "Gujarat",
+      "latitude": 23.0225,
+      "longitude": 72.5714
+    },
+    {
+      "name": "Indore (Poha-Jalebi, Bhutte ka Kees, Namkeen)",
+      "state": "Madhya Pradesh",
+      "latitude": 22.7196,
+      "longitude": 75.8577
+    },
+    {
+      "name": "Kochi (Kerala Cuisine - Appam, Meen Curry)",
+      "state": "Kerala",
+      "latitude": 9.9312,
+      "longitude": 76.2673
+    },
+    {
+      "name": "Pondicherry (French & South Indian Fusion Food)",
+      "state": "Puducherry",
+      "latitude": 11.9416,
+      "longitude": 79.8083
+    },
+    {
+      "name": "Varanasi (Street Food - Kachori, Malaiyo, Banarasi Paan)",
+      "state": "Uttar Pradesh",
+      "latitude": 25.3176,
+      "longitude": 82.9739
+    },
+    {
+      "name": "Nagaland (Naga Cuisine - Smoked Pork, Bamboo Shoot Curry)",
+      "state": "Nagaland",
+      "latitude": 26.1584,
+      "longitude": 94.5624
+    },
+    {
+      "name": "Darjeeling (Tea & Tibetan Cuisine - Thukpa, Momos)",
+      "state": "West Bengal",
+      "latitude": 27.0410,
+      "longitude": 88.2663
+    },
+    {
+      "name": "Srinagar (Wazwan - Rogan Josh, Yakhni)",
+      "state": "Jammu & Kashmir",
+      "latitude": 34.0837,
+      "longitude": 74.7973
+    },
+    {
+      "name": "Bhopal (Bhopali Cuisine - Poha, Keema, Biryani)",
+      "state": "Madhya Pradesh",
+      "latitude": 23.2599,
+      "longitude": 77.4126
+    },
+    {
+      "name": "Patna (Litti Chokha, Sattu Paratha)",
+      "state": "Bihar",
+      "latitude": 25.5941,
+      "longitude": 85.1376
+    }
+  ]
+	
+}
