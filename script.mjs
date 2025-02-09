@@ -1,9 +1,12 @@
 /* Page Data */
 const TouristDestinations = await fetch('india_tourism.json').then(response => response.json());
+const StateData = await fetch('state_data.json').then(response => response.json());
 
 /* DOM Elements */
 const mapContainer = document.getElementById('map');
 const TourismSelect = document.getElementById('tourism-type-dropdown');
+const card = document.querySelector('.card');
+const slider = document.querySelector('.slider');
 
 // Define India's geographical bounds
 const indiaBounds = L.latLngBounds(
@@ -47,6 +50,37 @@ function zoomAndFocus(stateBounds, stateName) {
   map.fitBounds(stateBounds, { padding: [0, 0], animate: true });
 }
 
+function showCardData(stateName) {
+  const cardData = StateData[stateName];
+  // Adding Images
+  cardData.images.forEach((img, index) => {
+    const imgElement = document.createElement('img');
+    imgElement.src = img;
+    imgElement.alt = `Slide ${index + 1}`;
+    imgElement.className = index === 0 ? 'active' : '';
+    slider.appendChild(imgElement);
+
+  // Set title and description
+  document.querySelector('.card-title').textContent = cardData.title;
+  document.querySelector('.card-description').textContent = cardData.description;
+
+  // Slider functionality
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slider img');
+
+  function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+  }
+
+  setInterval(nextSlide, 1000); // Change slide every second
+
+  // Display the card
+  card.style.display = 'block';
+});
+}
+
 function renderMap() {
   // Load the GeoJSON data for India's states
   fetch('india_states.geojson') // Path to your GeoJSON file
@@ -69,6 +103,10 @@ function renderMap() {
         if (feature.properties && feature.properties.NAME_1) {
           layer.on('click', () => {
             zoomAndFocus(layer.getBounds(), feature.properties.NAME_1);
+            const stateName = feature.properties.NAME_1;
+            if (stateName === 'Maharashtra' || stateName === 'Gujarat' || stateName === 'Uttarakhand') {
+              showCardData(stateName);
+            }
           });
           layer.on('mouseover', () => {
             if (map.getZoom() < 5) {
@@ -113,29 +151,35 @@ function showLocations(locations) {
     }
   });
 
-  // Add markers for each location
-  locations.forEach(location => {
-    const marker = L.marker([location.latitude, location.longitude], {
-      icon: L.icon({
-        iconUrl: './Assets/marker.png', // Path to your custom marker icon
-        iconSize: [25, 30], // Initial size of the icon
-        iconAnchor: [12, 30], // Anchor point of the icon
-        popupAnchor: [1, -34] // Popup anchor point
-      })
-    }).bindPopup(location.name).addTo(map);
+  try {
 
-    // Adjust marker size based on zoom level
-    map.on('zoomend', () => {
-      const currentZoom = map.getZoom();
-      const newSize = 25 + (currentZoom - 4) * 2; // Adjust size formula as needed
-      marker.setIcon(L.icon({
-        iconUrl: './Assets/marker.png',
-        iconSize: [newSize, newSize * 1.64], // Adjust size proportionally
-        iconAnchor: [newSize / 2, newSize * 1.64],
-        popupAnchor: [1, -newSize * 1.64]
-      }));
+    // Add markers for each location
+    locations.forEach(location => {
+      const marker = L.marker([location.latitude, location.longitude], {
+        icon: L.icon({
+          iconUrl: './Assets/marker.png', // Path to your custom marker icon
+          iconSize: [25, 30], // Initial size of the icon
+          iconAnchor: [12, 30], // Anchor point of the icon
+          popupAnchor: [1, -34] // Popup anchor point
+        })
+      }).bindPopup(location.name).addTo(map);
+  
+      // Adjust marker size based on zoom level
+      map.on('zoomend', () => {
+        const currentZoom = map.getZoom();
+        const newSize = 25 + (currentZoom - 4) * 2; // Adjust size formula as needed
+        marker.setIcon(L.icon({
+          iconUrl: './Assets/marker.png',
+          iconSize: [newSize, newSize * 1.64], // Adjust size proportionally
+          iconAnchor: [newSize / 2, newSize * 1.64],
+          popupAnchor: [1, -newSize * 1.64]
+        }));
+      });
     });
-  });
+  }
+  catch (err) {
+    console.error('Error displaying locations:', err);
+  }
 }
 
 /* Event Listeners */

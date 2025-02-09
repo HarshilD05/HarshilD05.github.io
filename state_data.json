@@ -1,0 +1,18 @@
+{
+    "Maharashtra" : {
+        "Images" : ["./Assets/Maharashtra_1.jpg", "./Assets/Maharashtra_2.jpg", "./Assets/Maharashtra_3.jpg", "./Assets/Maharashtra_4.jpg"],
+        "Title" : "A fusion of heritage and culture ",
+        "Decsription" : "Maharashtra, a state steeped in compelling narratives, stands as a testament to the richness of India's varied heritage and the grandeur of its landscapes. Maharashtra is a land where history echoes through ancient landmarks, and diverse traditions thrive in harmony. The state takes pride in its wealth of historical wonders that reflect the grandeur of bygone eras with 5 UNESCO World Heritage Sites. From the renowned Ajanta, Elephanta and Ellora Caves, showcasing ancient rock-cut architecture and exquisite cave art, to the Chhatrapati Shivaji Maharaj Terminus and Victorian Gothic and Art Deco Ensembles of Mumbai, which have borne witness to the gothic architectural brilliance, the state's historical importance is deeply ingrained and diverse. The state's rich cultural heritage is reflected in its art, music, and cuisine, with the colourful Ganesh Chaturthi festival celebrated with great enthusiasm and fervour across the state."
+    },
+    "Gujarat" : {
+        "Images" : ["./Assets/Gujarat_1.jpg", "./Assets/Gujarat_2.jpg", "./Assets/Gujarat_3.jpg", "./Assets/Gujarat_4.jpg"],
+        "Title" : "India's westernmost gem",
+        "Decsription" : "Welcome to the vibrant state of Gujarat, where the past and present dance in harmony, and every corner whispers tales of bygone eras and vibrant traditions. Extending gracefully into the Arabian Sea, and boasting a sprawling coastline that spans 1600 kilometres, Gujarat proudly stands as the home state of Mahatma Gandhi, Father of the Nation. \nFrom majestic temples and architectural marvels to diverse traditions and natural beauty, this western Indian state is a treasure trove of experiences, beckoning travellers to embark on a journey that spans centuries. Let's explore the allure of this enchanting realm!"
+    },
+    "Uttarakhand" : {
+        "Images" : ["./Assets/Uttarakhand_1.jpg", "./Assets/Uttarakhand_2.jpg", "./Assets/Uttarakhand_3.jpg", "./Assets/Uttarakhand_4.jpg"],
+        "Title" : "In the heart of the Himalayas",
+        "Description" : "In the northern part of India, amidst the majestic mountains and rich mythological heritage, Uttarakhand unfolds as a mesmerising destination. This beautiful state is also known as 'Devbhoomi', or the abode of the gods, cradled within the embrace of the Himalayas and is geographically divided into Garhwal and Kumaon regions. While Uttarakhand boasts well-known destinations such as Nainital, Mussoorie, Auli, and sacred pilgrimage sites like Kedarnath, Badrinath, Rishikesh, and Haridwar, it also invites you on an adventure to explore its hidden gems."
+
+    }
+}

@@ -2,3 +2,45 @@
     display: flex;
     gap: 20px;
 }
+
+.card {
+    width: 30%;
+    height: 100vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.slider {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card-description {
+    margin: 0;
+    font-size: 14px;
+}
