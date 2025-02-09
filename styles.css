@@ -6,7 +6,7 @@
 .card {
     position: absolute;
     left: 0;
-    width: 300px;
+    width: 400px;
     height: 100vh;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -14,7 +14,7 @@
     margin: 0;
     display: none;
     z-index: 99999;
-    background: #e6e6e6;
+    background: #f4f4f4;
     padding: 0px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .slider {
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
@@ -55,15 +55,20 @@
 
 .card-title {
     margin: 20px;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     color: #333;
 }
 
 .card-description {
-    margin: 20px;
-    font-size: 14px;
+    margin: 10px;
+    max-height: 270px;
+    font-size: 18px;
     font-family: 'Arial', sans-serif;
-    color: #666;
+    color: #303030;
+    background: #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: scroll;
 }
