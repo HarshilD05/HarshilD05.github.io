@@ -18,7 +18,7 @@ const map = L.map('map', {
   minZoom: 4.6, // Minimum zoom level
   maxZoom: 10, // Maximum zoom level (same as minZoom to lock zoom)
   // zoomControl: false, // Disable zoom controls
-  dragging: false, // Disable panning
+  // dragging: false, // Disable panning
   // scrollWheelZoom: false, // Disable scroll wheel zoom
   doubleClickZoom: false, // Disable double-click zoom
   // touchZoom: false, // Disable touch zoom
@@ -44,7 +44,7 @@ const colors = [
 /* Functions */
 // Function to zoom and focus on a clicked state
 function zoomAndFocus(stateBounds, stateName) {
-  map.fitBounds(stateBounds, { padding: [50, 50], animate: true });
+  map.fitBounds(stateBounds, { padding: [0, 0], animate: true });
 }
 
 function renderMap() {
@@ -53,7 +53,7 @@ function renderMap() {
   .then(response => response.json())
   .then(data => {
     // Add the GeoJSON layer to the map
-    L.geoJSON(data, {
+    const geoJsonLayer = L.geoJSON(data, {
       style: function (feature) {
         // Assign a unique color to each state
         const stateIndex = feature.properties.NAME_1.charCodeAt(0) % colors.length;
@@ -61,19 +61,45 @@ function renderMap() {
           color: '#333', // Border color
           weight: 1, // Border width
           fillColor: colors[stateIndex], // Unique fill color
-          fillOpacity: 0.6 // Fill opacity
+          fillOpacity: 0.2 // Fill opacity
         };
       },
       onEachFeature: function (feature, layer) {
         // Add a popup with the state name
         if (feature.properties && feature.properties.NAME_1) {
-          layer.bindPopup(feature.properties.NAME_1);
           layer.on('click', () => {
             zoomAndFocus(layer.getBounds(), feature.properties.NAME_1);
           });
+          layer.on('mouseover', () => {
+            if (map.getZoom() < 5) {
+              layer.setStyle({fillOpacity: 0.8});
+            }
+            const center = layer.getBounds().getCenter();
+            layer.bindTooltip(feature.properties.NAME_1, { permanent: false, direction: 'top' }).openTooltip(center);
+          });
+
+          layer.on('mouseout', () => {
+            layer.setStyle({fillOpacity: 0.2});
+          });
         }
       }
+
     }).addTo(map);
+
+
+    // Add zoomend event listener to the map
+    map.on('zoomend', () => {
+      const zoomLevel = map.getZoom();
+      geoJsonLayer.eachLayer(layer => {
+        if (zoomLevel >= 8) { // Change 10 to your desired zoom level
+          layer.setStyle({ fillColor: 'transparent', fillOpacity: 0 });
+        } else {
+          const stateIndex = layer.feature.properties.NAME_1.charCodeAt(0) % colors.length;
+          layer.setStyle({ fillColor: colors[stateIndex], fillOpacity: 0.2 });
+        }
+      });
+    })
+
   })
   .catch(error => console.error('Error loading GeoJSON:', error));
 }
