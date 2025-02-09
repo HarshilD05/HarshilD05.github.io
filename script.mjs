@@ -16,12 +16,12 @@ const map = L.map('map', {
   maxBounds: indiaBounds, // Restrict panning outside India
   maxBoundsViscosity: 1.0, // Strictly enforce bounds
   minZoom: 4.6, // Minimum zoom level
-  maxZoom: 4.6, // Maximum zoom level (same as minZoom to lock zoom)
-  zoomControl: false, // Disable zoom controls
+  maxZoom: 10, // Maximum zoom level (same as minZoom to lock zoom)
+  // zoomControl: false, // Disable zoom controls
   dragging: false, // Disable panning
-  scrollWheelZoom: false, // Disable scroll wheel zoom
+  // scrollWheelZoom: false, // Disable scroll wheel zoom
   doubleClickZoom: false, // Disable double-click zoom
-  touchZoom: false, // Disable touch zoom
+  // touchZoom: false, // Disable touch zoom
   boxZoom: false // Disable box zoom
 }).setView([20.5937, 78.9629], 4); // Centered on India
 
@@ -42,6 +42,11 @@ const colors = [
 
 
 /* Functions */
+// Function to zoom and focus on a clicked state
+function zoomAndFocus(stateBounds, stateName) {
+  map.fitBounds(stateBounds, { padding: [50, 50], animate: true });
+}
+
 function renderMap() {
   // Load the GeoJSON data for India's states
   fetch('india_states.geojson') // Path to your GeoJSON file
@@ -63,6 +68,9 @@ function renderMap() {
         // Add a popup with the state name
         if (feature.properties && feature.properties.NAME_1) {
           layer.bindPopup(feature.properties.NAME_1);
+          layer.on('click', () => {
+            zoomAndFocus(layer.getBounds(), feature.properties.NAME_1);
+          });
         }
       }
     }).addTo(map);
