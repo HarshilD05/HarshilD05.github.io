@@ -4,12 +4,22 @@
 }
 
 .card {
-    width: 30%;
+    position: absolute;
+    left: 0;
+    width: 300px;
     height: 100vh;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 0;
+    display: none;
+    z-index: 99999;
+    background: #e6e6e6;
+    padding: 0px;
+}
+
+.show {
+    display: block;
 }
 
 .slider {
@@ -35,12 +45,25 @@
     padding: 10px;
 }
 
+.card-header h1 {
+    margin: 20px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
 .card-title {
-    margin: 0;
+    margin: 20px;
     font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
 }
 
 .card-description {
-    margin: 0;
+    margin: 20px;
     font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    color: #666;
 }

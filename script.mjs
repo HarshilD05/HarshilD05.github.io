@@ -52,17 +52,20 @@ function zoomAndFocus(stateBounds, stateName) {
 
 function showCardData(stateName) {
   const cardData = StateData[stateName];
+  console.log('Card Data:', cardData);
   // Adding Images
-  cardData.images.forEach((img, index) => {
+  cardData.Images.forEach((img, index) => {
     const imgElement = document.createElement('img');
     imgElement.src = img;
     imgElement.alt = `Slide ${index + 1}`;
     imgElement.className = index === 0 ? 'active' : '';
     slider.appendChild(imgElement);
 
+  document.querySelector('.card-header').children[0].textContent = cardData.stateName;
+
   // Set title and description
-  document.querySelector('.card-title').textContent = cardData.title;
-  document.querySelector('.card-description').textContent = cardData.description;
+  document.querySelector('.card-title').textContent = cardData.Title;
+  document.querySelector('.card-description').textContent = cardData.Description;
 
   // Slider functionality
   let currentSlide = 0;
@@ -74,7 +77,7 @@ function showCardData(stateName) {
       slides[currentSlide].classList.add('active');
   }
 
-  setInterval(nextSlide, 1000); // Change slide every second
+  setInterval(nextSlide, 5 * 1000); // Change slide every 5 second
 
   // Display the card
   card.style.display = 'block';
@@ -104,7 +107,8 @@ function renderMap() {
           layer.on('click', () => {
             zoomAndFocus(layer.getBounds(), feature.properties.NAME_1);
             const stateName = feature.properties.NAME_1;
-            if (stateName === 'Maharashtra' || stateName === 'Gujarat' || stateName === 'Uttarakhand') {
+            console.log('State Name:', stateName);
+            if (stateName === 'Maharashtra' || stateName === 'Gujarat' || stateName === 'Uttaranchal') {
               showCardData(stateName);
             }
           });
